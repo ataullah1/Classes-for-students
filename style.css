@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,400;1,600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+
+.nav_one {
+  background-color: #2d3436;
+  color: #fff;
+  font-family: 'Exo 2', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+}
+.nav_one h1 {
+  font-size: 40px;
+}
+
+.nav_one ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 25px 20px;
+}
+.nav_one ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+}
+.nav_one ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0px;
+  background-color: #e4e00e;
+  transition: 0.5s;
+}
+.nav_one ul li a:hover::after {
+  width: 100%;
+}
+.btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00b894;
+  color: #fff;
+  font-family: 'Exo 2', sans-serif;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #218873;
+  transform: scale(1.1);
+}
+
+/* =====Section Part ========= */
+
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  padding: 0 4%;
+}
+.section .s_left {
+  width: 50%;
+  padding-right: 4%;
+}
+.section .s_left h1 {
+  font-size: 40px;
+  font-family: 'Exo 2', sans-serif;
+}
+.section .s_left p {
+  font-size: 18px;
+  margin: 25px 0;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+}
+.section .s_left button {
+  font-size: 18px;
+  padding: 12px 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00b894;
+  color: #fff;
+  font-family: 'Exo 2', sans-serif;
+  transition: 0.3s;
+}
+.s_left button:hover {
+  background-color: #218873;
+  transform: translateX(10px);
+}
+.section .s_right {
+  width: 50%;
+  text-align: right;
+}
+.section .s_right img {
+  width: 80%;
+  border-radius: 25px;
+  transition: 1s;
+}
+.section .s_right img:hover {
+  transform: scale(1.08);
+}
