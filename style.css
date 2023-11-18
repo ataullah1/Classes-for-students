@@ -125,7 +125,7 @@ button {
 }
 .project {
   width: 100%;
-  padding: 25px 12%;
+  padding: 25px 10%;
 }
 .project h1 {
   text-align: center;
@@ -141,7 +141,7 @@ button {
   gap: 20px;
 }
 .project .project_view .card {
-  background-color: #a4c6eb;
+  background-color: #a4e5eb;
   border-radius: 10px;
   transition: 0.5s;
 }
@@ -173,4 +173,52 @@ button {
 .project .project_view .card button:hover {
   background-color: #218873;
   transform: translateX(10px);
+}
+.w_profile_h {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-top: 50px;
+}
+.work_profile {
+  width: 100%;
+  padding: 50px 10%;
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+.w_profile i {
+  font-size: 50px;
+  color: #e04343;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid #e04343;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.w_profile i:hover {
+  background-color: #e04343;
+  color: #fff;
+  font-size: 60px;
+}
+.w_profile h1 {
+  padding-top: 35px;
+}
+
+.w_profile div {
+  height: 2px;
+  width: 120px;
+  background-color: gray;
+  margin: 25px auto;
+}
+
+.w_profile p {
+  color: rgba(0, 0, 0, 0.633);
 }
