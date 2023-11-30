@@ -34,14 +34,14 @@ button {
   list-style: none;
   display: inline-block;
   margin: 25px 20px;
+  position: relative;
 }
 .nav_one ul li a {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
-  position: relative;
 }
-.nav_one ul li a::after {
+.nav_one ul li::after {
   content: '';
   position: absolute;
   width: 0;
@@ -51,7 +51,7 @@ button {
   background-color: #e4e00e;
   transition: 0.5s;
 }
-.nav_one ul li a:hover::after {
+.nav_one ul li:hover::after {
   width: 100%;
 }
 .btn {
@@ -221,4 +221,240 @@ button {
 
 .w_profile p {
   color: rgba(0, 0, 0, 0.633);
+}
+
+/* ====Skills Section ======== */
+
+.skills {
+  width: 100%;
+  padding: 50px 10%;
+}
+.skills h1 {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+  padding: 0px 0 50px 0;
+}
+
+.skills h3 {
+  font-size: 20px;
+  width: 70%;
+  margin: auto;
+}
+.skills div {
+  padding-right: 10px;
+}
+.skills .sub_s {
+  width: 70%;
+  height: 20px;
+  background-color: #00b894;
+  margin: auto;
+  text-align: right;
+  border-radius: 50px;
+}
+.skills .sub_s .html {
+  width: 95%;
+  background-color: yellow;
+  border-radius: 50px;
+  animation-name: htmlanimation;
+  animation-duration: 3s;
+}
+@keyframes htmlanimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+.skills .sub_s .css {
+  width: 90%;
+  background-color: rgb(255, 153, 0);
+  border-radius: 50px;
+  animation-name: cssanimation;
+  animation-duration: 3s;
+}
+@keyframes cssanimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.skills .sub_s .js {
+  width: 20%;
+  background-color: rgb(101, 68, 248);
+  border-radius: 50px;
+  animation-name: jsanimation;
+  animation-duration: 3s;
+}
+@keyframes jsanimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+.skills .sub_s .tc {
+  width: 95%;
+  background-color: rgb(154, 31, 3);
+  border-radius: 50px;
+  animation-name: tcanimation;
+  animation-duration: 3s;
+}
+@keyframes tcanimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+.skills .sub_s .btp {
+  width: 98%;
+  background-color: rgb(255, 0, 204);
+  border-radius: 50px;
+  animation-name: btpanimation;
+  animation-duration: 3s;
+}
+@keyframes btpanimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 98%;
+  }
+}
+
+.skills .sub_s .react {
+  width: 30%;
+  background-color: sandybrown;
+  border-radius: 50px;
+  animation-name: reactanimation;
+  animation-duration: 3s;
+}
+@keyframes reactanimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+/* ======== Footer Section======== */
+
+.footer {
+  background-color: #697589;
+  color: white;
+}
+.footer .top_footer {
+  padding: 50px 10%;
+  text-align: center;
+}
+.footer .top_footer p {
+  width: 70%;
+  margin: auto;
+  padding-top: 8px;
+}
+
+.footer .top_footer form {
+  padding: 50px 0;
+}
+.footer .top_footer form input {
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  border: none;
+  padding: 15px;
+}
+.footer .top_footer form input[type='email'] {
+  width: 40%;
+}
+.footer .top_footer form input[type='button'] {
+  width: 20%;
+  background-color: #000000;
+  color: white;
+  transition: 0.3s;
+}
+.footer .top_footer form input[type='button']:hover {
+  background-color: #00b894;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* =====Btm _ Footer ======== */
+
+.btm_footer {
+  display: flex;
+  background-color: #253043;
+  padding: 20px 4%;
+  justify-content: space-between;
+}
+.f_link {
+  width: 30%;
+}
+.f_link h1 {
+  font-size: 30px;
+}
+.btm_footer .f_link p {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.btm_footer .first_lnk form {
+  padding: 15px 0;
+}
+.btm_footer .first_lnk form input {
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  border: none;
+  padding: 10px;
+}
+
+.btm_footer .first_lnk form input[type='button'] {
+  background-color: #000000;
+  color: white;
+  transition: 0.3s;
+}
+.footer .btm_footer form input[type='button']:hover {
+  background-color: #00b894;
+  color: #000000;
+  font-weight: bold;
+}
+
+.footer .btm_footer .f_icon i {
+  font-size: 18px;
+  background-color: #00b894;
+  border-radius: 50px;
+  padding: 8px;
+  transition: 0.3s;
+}
+.footer .btm_footer .f_icon i:hover {
+  background-color: #2a6156;
+}
+.footer .btm_footer .second_f {
+  text-align: center;
+}
+.footer .btm_footer .third_f {
+  /* background-color: #e04343; */
+  text-align: center;
+}
+.footer .btm_footer .third_f div {
+  display: inline-block;
+  width: 30%;
+}
+.footer .btm_footer .third_f a {
+  display: flex;
+  font-size: 16px;
+  color: white;
+  margin: 10px;
+}
+.footer .btm_footer .third_f a:hover {
+  color: #00b894;
 }
