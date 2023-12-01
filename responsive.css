@@ -42,4 +42,64 @@
   .section .s_right img:hover {
     transform: scale(1.05);
   }
+  .project .project_view {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  .work_profile {
+    display: block;
+  }
+  .w_profile {
+    margin-bottom: 50px;
+  }
+  .skills .sub_s {
+    width: 90%;
+  }
 }
+/* @media (max-width: 670px) {
+  .nav_one {
+    display: flex;
+  }
+  .nav_one h1 {
+    font-size: 35px;
+  }
+
+  .nav_one ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 25px 20px;
+    position: relative;
+  }
+  .nav_one ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .nav_one ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0px;
+    background-color: #e4e00e;
+    transition: 0.5s;
+  }
+  .nav_one ul li:hover::after {
+    width: 100%;
+  }
+  .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00b894;
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    background-color: #218873;
+    transform: scale(1.1);
+  }
+} */
