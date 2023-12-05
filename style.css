@@ -29,7 +29,10 @@ button {
 .nav_one h1 {
   font-size: 40px;
 }
-
+.nav_one .menubtn {
+  display: flex;
+  align-items: center;
+}
 .nav_one ul li {
   list-style: none;
   display: inline-block;
@@ -56,7 +59,7 @@ button {
 }
 .btn {
   font-size: 18px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 10px;
   border: none;
   background-color: #00b894;
@@ -69,6 +72,17 @@ button {
   transform: scale(1.1);
 }
 
+/* Menu design */
+.nav_one .menu {
+  display: none;
+  cursor: pointer;
+}
+.nav_one .menu div {
+  height: 4px;
+  width: 30px;
+  background-color: #00b894;
+  margin-bottom: 3px;
+}
 /* =====Section Part ========= */
 
 .section {
@@ -389,11 +403,12 @@ button {
 }
 
 /* =====Btm _ Footer ======== */
-
-.btm_footer {
-  display: flex;
+.btm_f_li {
   background-color: #253043;
   padding: 20px 4%;
+}
+.btm_footer {
+  display: flex;
   justify-content: space-between;
 }
 .f_link {
@@ -407,42 +422,41 @@ button {
   padding: 10px 0;
 }
 
-.btm_footer .first_lnk form {
+.btm_f_li form {
   padding: 15px 0;
 }
-.btm_footer .first_lnk form input {
+.btm_f_li form input {
   font-size: 15px;
   font-family: 'Exo 2', sans-serif;
   border: none;
   padding: 10px;
 }
 
-.btm_footer .first_lnk form input[type='button'] {
+.btm_f_li form input[type='button'] {
   background-color: #000000;
   color: white;
   transition: 0.3s;
 }
-.footer .btm_footer form input[type='button']:hover {
+.btm_f_li form input[type='button']:hover {
   background-color: #00b894;
   color: #000000;
   font-weight: bold;
 }
 
-.footer .btm_footer .f_icon i {
+.btm_f_li .f_icon i {
   font-size: 18px;
   background-color: #00b894;
   border-radius: 50px;
   padding: 8px;
   transition: 0.3s;
 }
-.footer .btm_footer .f_icon i:hover {
+.btm_f_li .f_icon i:hover {
   background-color: #2a6156;
 }
 .footer .btm_footer .second_f {
   text-align: center;
 }
 .footer .btm_footer .third_f {
-  /* background-color: #e04343; */
   text-align: center;
 }
 .footer .btm_footer .third_f div {
@@ -457,4 +471,12 @@ button {
 }
 .footer .btm_footer .third_f a:hover {
   color: #00b894;
+}
+.copyright {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+.copyright span {
+  color: hotpink;
+  cursor: pointer;
 }
